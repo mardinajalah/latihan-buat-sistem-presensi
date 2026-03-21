@@ -3,6 +3,7 @@
 - card jumlah anggota
 - card jumlah anggota hadir hari ini
 - card jumlah anggota absen hari ini
+- leade board kehadiran
 
 ## Anggota
 - list anggota
