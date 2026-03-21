@@ -29,7 +29,7 @@
 ## Tabel Presensi
 - id
 - hari
-- status (hadir, izin, absen)
+- status (hadir, izin, absen) (status presensi tidak bisa diubah ketika belum pergantian hari)
 - jam_masuk (pertama kali data di buat)
 - jam_keluar (terisi jika melakukan presensi yang kedua)
 
