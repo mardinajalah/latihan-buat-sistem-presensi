@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Anggota {
+  kode_anggota   String    @unique
+  nama           String
+  asal           String
+  tanggal_lahir  String
+  status         String
+  tanggal_masuk  DateTime  @default(now())
+  tanggal_keluar DateTime?
+
+  presensi Presensi[]
+}
+
+model Presensi {
+  id           Int     @id @default(autoincrement())
+  hari         String
+  status       String
+  jam_masuk    String
+  jam_keluar   String?
+  anggota      Anggota @relation(fields: [kodeAnggota], references: [kode_anggota])
+  kodeAnggota String  @unique
+}
