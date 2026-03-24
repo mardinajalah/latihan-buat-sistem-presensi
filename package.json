@@ -1,0 +1,22 @@
+{
+  "name": "presensi-kehadiran",
+  "version": "1.0.0",
+  "description": "Backend",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mardinajalah/latihan-buat-sistem-presensi.git"
+  },
+  "keywords": [],
+  "author": "Mardin",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
